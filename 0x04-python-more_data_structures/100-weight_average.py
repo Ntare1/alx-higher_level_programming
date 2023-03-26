@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-num = 0
-den = 0
 def weight_average(my_list=[]):
+    num = 0
+    den = 0
     if my_list and len(my_list):
         return (0)
     else:
