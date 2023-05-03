@@ -3,6 +3,8 @@
 
 
 class Square:
+    """Class of a square"""
+
     def __init__(self, size=0):
         """Method initializing class
          Args:
