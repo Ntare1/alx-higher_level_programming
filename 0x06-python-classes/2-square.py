@@ -8,5 +8,5 @@ class Square:
         """ raising exceptions incase size in not an integer or below """
         if not type(size) is int:
             raise TypeError("size must be an integer")
-        if size < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
