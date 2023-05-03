@@ -3,6 +3,6 @@
 
 
 class Square:
-    """ Method that initializes the attributes of an object eg. sise is an an attribute"""
+    """ Method that initializes the attributes of an object """
     def __init__(self, size):
         self.__size = size
