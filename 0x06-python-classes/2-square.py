@@ -7,7 +7,6 @@ class Square:
         """Method initializing class
          Args:
          size: private attribute showing size of the square
-         
          Raises:
          TypeError: in case size is not an integer
          ValueError: in case siz is less than zero
@@ -17,6 +16,4 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        
         self.__size = size
-
