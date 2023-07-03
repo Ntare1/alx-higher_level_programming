@@ -57,10 +57,10 @@ Adding two characters
     TypeError: a must be an integer
 
 Adding a string
-    >>> add_integer('run')
+    >>> add_integer("Run")
     Traceback (most recent call last):
               ...
-    TypeError: a must be an add_integer
+    TypeError: a must be an integer
 
 Adding a float NaN
     >>> add_integer(1, float('Nan'))
