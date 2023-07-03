@@ -11,6 +11,13 @@ Adding 1 and 2
     >>> add_integer(1, 2)
     3
 
+Adding an integer and character
+    >>> add_integer(4, '2')
+    Traceback (most recent call last):
+             ...
+    TypeError: b must be an integer
+
+
 Adding 100 and -2
     >>> add_integer(100, -2)
     98
