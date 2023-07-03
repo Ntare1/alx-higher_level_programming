@@ -34,3 +34,13 @@ Use the function to add None
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
+
+Adding two floats
+>>> add_integer(2.5, 4.6)
+6
+
+Adding two stings
+>>> add_integer('a', 'b')
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
