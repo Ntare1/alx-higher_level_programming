@@ -11,93 +11,85 @@ Adding 1 and 2
     >>> add_integer(1, 2)
     3
 
-Adding 9 and 21
-    >>> add_integer(9, 21)
-    30
-
-Adding an integer and character
-    >>> add_integer(1, '2')
-    Traceback (most recent call last):
-             ...
-    TypeError: b must be an integer
-
-
-Adding 100 and -2
+Subtracting 100 and 2
     >>> add_integer(100, -2)
     98
 
-Giving one argument(2)
-    >>> add_integer(2)
+Adding 2.1 and 98
+    >>> add_integer(2.1)
     100
 
-Adding a float and integer 100.3 and -2
-    >>> add_integer(100.3, -2)
-    98
+Subtracting 100.3 and 2
+	    >>> add_integer(100.3, -2)
+	    98
 
-Add an integer 4 and a string "School"
+Adding an integer number and a string
     >>> add_integer(4, "School")
     Traceback (most recent call last):
-             ...
+	      ...
     TypeError: b must be an integer
 
-Use the function to add None
+Passing None
     >>> add_integer(None)
     Traceback (most recent call last):
-             ...
+	      ...
     TypeError: a must be an integer
 
-Adding two floats
-    >>> add_integer(2.5, 4.6)
-    6
-
-Adding two characters
-    >>> add_integer('a', 'b')
-    Traceback (most recent call last):
-             ...
-    TypeError: a must be an integer
-
-Adding a string
-    >>> add_integer('run')
+Adding a letter and a number
+    >>> add_integer('1', 1)
     Traceback (most recent call last):
               ...
-    TypeError: a must be an add_integer
+    TypeError: a must be an integer
 
-Adding a float NaN
-    >>> add_integer(1, float('Nan'))
+Adding two letters
+    >>> add_integer('2', '1')
+    Traceback (most recent call last):
+              ...
+    TypeError: a must be an integer
+
+Adding a tuple
+    >>> add_integer((1, 1))
+    Traceback (most recent call last):
+              ...
+    TypeError: a must be an integer
+
+Adding a number and a list
+    >>> add_integer(123, [])
+    Traceback (most recent call last):
+	      ...
+    TypeError: b must be an integer
+
+Passing a string
+    >>> add_integer("Hello")
+    Traceback (most recent call last):
+	      ...
+    TypeError: a must be an integer
+
+Adding two float numbers
+    >>> add_integer(2.9, 2.9)
+    4
+
+Subtracting 98 and 1
+    >>> add_integer(-1)
+    97
+
+Case Overflow:
+
+    >>> add_integer(float('inf'), 0)
     Traceback (most recent call last):
     	      ...
-    ValueError: cannot convert float NaN to integer
-
-Adding infinity
-    >>> add_integer(float('inf'))
-    Traceback (most recent call last):
-              ...
     OverflowError: cannot convert float infinity to integer
+
+Case Overflow 2:
 
     >>> add_integer(float('inf'), float('-inf'))
     Traceback (most recent call last):
     	      ...
     OverflowError: cannot convert float infinity to integer
 
-Missing two arguments
-    >>> add_integer()
+Case NaN:
+
+    >>> add_integer(0, float('nan'))
     Traceback (most recent call last):
-              ...
-    TypeError: add_integer() missing 1 required positional argument: 'a'
-
-Adding a number and a list
-    Traceback (most recent call last):
-	      ...
-    TypeError: b must be an integer
-
-Subtracting 98 and 1
-    >>> add_integer(-7)
-    91
-
-Adding float and integer
-    >>> add_integer(1.4, 2)
-    3
-
-Adding a float
-    >>> add_integer(2.1)
-    100
+    	      ...
+    ValueError: cannot convert float NaN to integer
