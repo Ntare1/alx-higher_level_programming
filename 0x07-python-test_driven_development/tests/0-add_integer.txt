@@ -1,0 +1,36 @@
+The "0-add_integer" module
+===========================
+
+Testing "add_integer"
+---------------------
+
+import function from the module:
+>>>add_integer = __import__('0-add_integer').add_integer
+
+Adding 1 and 2
+>>>add_integer(1, 2)
+3
+
+Adding 100 and -2
+>>>add_integer(100, -2)
+98
+
+Giving one argument(2)
+>>>add_integer(2)
+100
+
+Adding a float and integer 100.2 and -2
+>>>add_integer(100.2, -2)
+98
+
+Add an integer 4 and a string "School"
+>>>add_integer(4, "School")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+Use the function to add None
+>>>add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
