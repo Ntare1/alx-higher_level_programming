@@ -57,3 +57,8 @@ Adding a string
     Traceback (most recent call last):
               ...
     TypeError: a must be an add_integer
+
+>>> add_integer(0, float('Nan'))
+    Traceback (most recent call last):
+    	      ...
+    ValueError: cannot convert float NaN to integer
