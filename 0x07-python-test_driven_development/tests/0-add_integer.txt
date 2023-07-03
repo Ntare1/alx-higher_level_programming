@@ -44,3 +44,9 @@ Adding two stings
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
+
+Adding a string
+>>> add_integer('run')
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
