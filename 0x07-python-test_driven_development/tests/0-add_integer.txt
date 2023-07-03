@@ -16,7 +16,7 @@ Adding 9 and 21
     30
 
 Adding an integer and character
-    >>> add_integer(4, '2')
+    >>> add_integer(1, '2')
     Traceback (most recent call last):
              ...
     TypeError: b must be an integer
@@ -93,3 +93,7 @@ Adding a number and a list
 Subtracting 98 and 1
     >>> add_integer(-7)
     91
+
+Adding float and integer
+    >>> add_integer(1.4, 2)
+    3
