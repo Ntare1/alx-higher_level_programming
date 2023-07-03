@@ -97,3 +97,7 @@ Subtracting 98 and 1
 Adding float and integer
     >>> add_integer(1.4, 2)
     3
+
+Adding a float
+    >>> add_integer(2.1)
+    100
