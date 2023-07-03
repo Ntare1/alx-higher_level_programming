@@ -58,7 +58,8 @@ Adding a string
               ...
     TypeError: a must be an add_integer
 
->>> add_integer(0, float('Nan'))
+Adding a float NaN
+    >>> add_integer(0, float('Nan'))
     Traceback (most recent call last):
     	      ...
     ValueError: cannot convert float NaN to integer
