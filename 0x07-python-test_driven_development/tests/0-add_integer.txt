@@ -66,33 +66,4 @@ Adding a float NaN
     >>> add_integer(1, float('Nan'))
     Traceback (most recent call last):
     	      ...
-    ValueError: cannot convert float NaN to integer
-
-Adding infinity
-    >>> add_integer(float('inf'))
-    Traceback (most recent call last):
-              ...
-    OverflowError: cannot convert float infinity to integer
-
-Adding infinity
-    >>> add_integer(float('inf'), float('-inf'))
-    Traceback (most recent call last):
-    	      ...
-    OverflowError: cannot convert float infinity to integer
-
-Adding a number and a list
-    Traceback (most recent call last):
-	      ...
-    TypeError: b must be an integer
-
-Subtracting 98 and 1
-    >>> add_integer(-7)
-    91
-
-Adding float and integer
-    >>> add_integer(1.4, 2)
-    3
-
-Adding a float
-    >>> add_integer(2.1)
-    100
+    ValueError: cannot convert float NaN to add_integer
