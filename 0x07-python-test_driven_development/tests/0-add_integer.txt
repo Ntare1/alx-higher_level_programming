@@ -30,7 +30,7 @@ Giving one argument(2)
     >>> add_integer(2)
     100
 
-Adding a float and integer 100.2 and -2
+Adding a float and integer 100.3 and -2
     >>> add_integer(100.3, -2)
     98
 
@@ -63,7 +63,7 @@ Adding a string
     TypeError: a must be an add_integer
 
 Adding a float NaN
-    >>> add_integer(0, float('Nan'))
+    >>> add_integer(1, float('Nan'))
     Traceback (most recent call last):
     	      ...
     ValueError: cannot convert float NaN to integer
@@ -72,6 +72,11 @@ Adding infinity
     >>> add_integer(float('inf'))
     Traceback (most recent call last):
               ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(float('inf'), float('-inf'))
+    Traceback (most recent call last):
+    	      ...
     OverflowError: cannot convert float infinity to integer
 
 Missing two arguments
@@ -84,3 +89,7 @@ Adding a number and a list
     Traceback (most recent call last):
 	      ...
     TypeError: b must be an integer
+
+Subtracting 98 and 1
+    >>> add_integer(-7)
+    91
