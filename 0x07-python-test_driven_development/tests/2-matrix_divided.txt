@@ -1,7 +1,7 @@
-The "2-matrix_divided" module
+The ``2-matrix_divided`` module
 ==============================
 
-using "matrix_divided"
+using ``matrix_divided``
 ----------------------
 Importing function from the module:
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
