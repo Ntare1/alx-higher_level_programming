@@ -26,7 +26,7 @@ Diving a matrix containig a negative
     [[3.33, -6.67, 10.0], [-13.33, 16.67, 20.0]]
 
 Dividing an empty list
-    >>> matrix = [10, 20, 30]
+    >>> matrix = []
     >>> print(matrix_divided(matrix, 3))
     Traceback (most recent call last):
              ...
