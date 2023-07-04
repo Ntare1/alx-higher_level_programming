@@ -3,7 +3,6 @@ The "2-matrix_divided" module
 
 using "matrix_divided"
 ----------------------
-
 Importing function from the module:
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
@@ -32,6 +31,7 @@ Dividing an empty list
     Traceback (most recent call last):
              ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 Dividing an empty matrix
     >>> matrix = [[]]
     >>> print(matrix_divided(matrix, 3))
@@ -71,4 +71,4 @@ Dividing matrix with zero
     Traceback (most recent call last):
              ...
     ZeroDivisionError: division by zero
-
+    
