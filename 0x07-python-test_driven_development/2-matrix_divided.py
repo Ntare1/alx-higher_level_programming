@@ -15,9 +15,9 @@ def matrix_divided(matrix, div):
     Returns: A new matrix
 
     """
+    message = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix or not isinstance(matrix, list):
-        raise TypeError("matrix must be a matrix"\ 
-                       "(list of lists)of integers/floats")
+        raise TypeError(message)
     lst_len = len(matrix[0])
     new_matrix = []
     for lst in matrix:
@@ -30,8 +30,7 @@ def matrix_divided(matrix, div):
             if div == 0:
                 raise ZeroDivisionError("division by zero")
             if not type(item) in (int, float):
-                raise TypeError("matrix must be a matrix (list of lists)"\ 
-                               "of integers/floats")
+                raise TypeError(message)
             new_list.append(round(item / div, 2))
         new_matrix.append(new_list)
     return(new_matrix)
