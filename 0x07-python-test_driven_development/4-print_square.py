@@ -2,11 +2,13 @@
 """
 Module that contains a function that prints a square
 """
+
+
 def print_square(size):
     """
     Function that prints a square using #
 
-    Args: 
+    Args:
     size: dictates the size of the square must be an integer
 
     Raises
@@ -25,4 +27,3 @@ def print_square(size):
         for y in range(size - 1):
             print("#", end="")
         print("#")
-        
