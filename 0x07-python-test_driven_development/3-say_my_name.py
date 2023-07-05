@@ -10,7 +10,7 @@ def say_my_name(first_name, last_name=""):
 
     Args:
     first_name: should be a string
-    last_name: should be a string 
+    last_name: should be a string
 
     Return: a string containg the first and last name
 
