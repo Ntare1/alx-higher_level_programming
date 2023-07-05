@@ -54,3 +54,13 @@ Passing empty list
     >>> my_list = MyList(x)
     >>> my_list.print_sorted()
     []
+
+Passing negative numbers
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(-4)
+    >>> my_list.append(-2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+    [-4, -2, 1, 3, 5]
