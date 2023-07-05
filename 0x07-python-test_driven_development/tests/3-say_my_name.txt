@@ -13,7 +13,7 @@ Printing first_name and last_name
 
 Printing first_name and last_name without giving last_name
     >>> say_my_name("Steven")
-    My name is Steven
+    My name is Steven 
 
 Printing None as the last_name
     >>> say_my_name("Raymond", None)
