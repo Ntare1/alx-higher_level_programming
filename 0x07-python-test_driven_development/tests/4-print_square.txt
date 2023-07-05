@@ -11,8 +11,8 @@ Printing a square
 
     >>> print_square(4)
     ####
-    ####      
-    ####      
+    ####
+    ####
     ####
 
 Printing a square size (0)
